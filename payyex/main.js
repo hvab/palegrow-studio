@@ -1,0 +1,1 @@
+function autosize(){var e=this;setTimeout(function(){e.style.cssText="height:"+e.scrollHeight+"px"},0)}var textarea=document.querySelector(".chat__composer");textarea.addEventListener("keydown",autosize);
