@@ -183,9 +183,7 @@
     </div>
 
     <div class="contacts-page__map-cell">
-      <div class="contacts-page__map embed">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1304.1565244641208!2d30.31566181650705!3d59.939684620943616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963110662478ff%3A0x7425d946477607cf!2z0JDQu9C10LrRgdCw0L3QtNGA0L7QstGB0LrQsNGPINC60L7Qu9C-0L3QvdCw!5e0!3m2!1sru!2sru!4v1519483922379" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-      </div>
+      <div class="contacts-page__map embed" id="map"></div>
     </div>
 
   </div>
@@ -278,7 +276,55 @@
 
 
   
+  
     <script src="main.js"></script>
   
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript">
+  ymaps.ready(init);
+
+  function init () {
+    var myMap = new ymaps.Map("map", {
+      center: [55.05, 82.920077],
+      zoom: 10
+    }, {
+      searchControlProvider: 'yandex#search'
+    });
+
+    myMap.geoObjects
+        .add(new ymaps.Placemark([55.069236, 82.902409], {
+            balloonContentHeader: "ул. Северная, 41",
+            balloonContentBody: '+7 (383) 325-19-20',
+            hintContent: "Магазин"
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: 'assets/store.png',
+          iconImageSize: [42, 53],
+          iconImageOffset: [-21, -53]
+        }))
+        .add(new ymaps.Placemark([55.109312, 82.984471], {
+            balloonContentHeader: "ул. Богдана Хмельницкого, 115",
+            balloonContentBody: '+7 (383) 325-11-10',
+            hintContent: "Магазин"
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: 'assets/store.png',
+          iconImageSize: [42, 53],
+          iconImageOffset: [-21, -53]
+        }))
+        .add(new ymaps.Placemark([54.944001, 83.069505], {
+            balloonContentHeader: "Бердское шоссе, 156",
+            balloonContentBody: '+7 (383) 373-97-40',
+            hintContent: "Магазин"
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: 'assets/store.png',
+          iconImageSize: [42, 53],
+          iconImageOffset: [-21, -53]
+        }));
+  }
+  </script>
+
   </body>
 </html>
