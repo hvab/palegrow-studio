@@ -17,6 +17,7 @@
   
 
   
+    <link rel="stylesheet" href="vendor.css">
     <link rel="stylesheet" href="main.css">
   
   </head>
@@ -162,7 +163,11 @@
       <div class="aside-box category-page__layout-aside-nav">
         <button class="button aside-box__switch" type="button">Каталог</button>
 
-        <div class="aside-box__body">
+        <!--
+          Если понадобится, чтобы пункты каталога по умолчанию отображались,
+          то нужно убрать класс aside-box__body_hidden
+        -->
+        <div class="aside-box__body aside-box__body_hidden">
           <nav class="catalog-nav">
             <div class="catalog-nav__item catalog-nav__item_dropdown">
               <a href="" class="catalog-nav__link catalog-nav__link_active link">Кровля</a>
@@ -196,10 +201,10 @@
         </div>
       </div>
 
-      <div class="aside-box">
+      <div class="aside-box category-page__aside-box-filter">
         <button class="button aside-box__switch aside-box__switch_filter" type="button">Фильтр</button>
 
-        <div class="aside-box__body">
+        <div class="aside-box__body aside-box__body_hidden">
           <form class="filter-form" action="post">
             <div class="filter-form__fieldset">
               <div class="filter-form__title">Цена</div>
@@ -474,6 +479,7 @@
 
 
   
+    <script src="vendor.js"></script>
     <script src="main.js"></script>
   
   </body>
