@@ -1,15 +1,15 @@
 # palegrow-studio
 
-[carstender](/carstender)
+[carstender](/palegrow-studio/carstender)
 
-[freudgroup-ezviz](/freudgroup-ezviz)
+[freudgroup-ezviz](/palegrow-studio/freudgroup-ezviz)
 
-[hiwatch](/hiwatch)
+[hiwatch](/palegrow-studio/hiwatch)
 
-[icyfish](/icyfish)
+[icyfish](/palegrow-studio/icyfish)
 
-[payyex](/payyex)
+[payyex](/palegrow-studio/payyex)
 
-[sibdk](/sibdk)
+[sibdk](/palegrow-studio/sibdk)
 
-[sibzno](/sibzno)
+[sibzno](/palegrow-studio/sibzno)
